@@ -93,30 +93,32 @@
     </p>
 
 <h8 id="Frontline interception."><b>Frontline interception.</b></h8>
-  <p>
+  <p id="Main 3">
     
   </p>
 
 <h9 id="Final point of interception."><b>Final point of interception.</b></h9>
-  <p>
+  <p id="Main 4">
     The OWA drone has made it through all regular, conventional layers and has started an attack dive on its final target, maybe an MBT, or a couple of squaddies taking cover in an apartment. There is no command level response available, like firing a missile or ordering a drone interception, since the remaining time to intercept is now counted in minutes rather than hours. 
   </p>
 
 <h10 id="Other potential interception methods."><b>Other potential interception methods.</b></h10>
-  <p>
-    Electronical warfare: This is jamming, counter-jamming, and hacking. Highly expensive, vulnerable, and easily trackable/detectable, while not being reliable. Technically unlimited ammunition, but easily damaged or destroyed, and preventing this, is no small ask when you are talking about making something like a radar bulletproof (Active protection systems: Protecting armour in the drone & missile era, 2026). 
-  </p>
-  <p>
-    Laser interception: 
+  <p id="Main 5">
+    <li>Electronical warfare: This is jamming, counter-jamming, and hacking. Highly expensive, vulnerable, and easily trackable/detectable, while not being reliable. Technically unlimited ammunition, but easily damaged or destroyed, and preventing this, is no small ask when you are talking about making something like a radar bulletproof (Active protection systems: Protecting armour in the drone & missile era, 2026).</li>
+    <li>Laser interception, (also known as Directed Energy Weapons, or as High-Energy Laser (HEL) (DiMascio, Feickert and Sayler, 2024)): Theoretically infinite ammunition, however, has a slow time to kill each target, with one of the fastest only achieving 20 per minute (Electro Optic Systems, 2025), vs the 20mm M61A1 Gatling Gun ability to achieve 4,500 kills per minute, assuming that every shot kills at the max fire rate (General Dynamics Ordnance and Tactical Systems, 2025), due to lasers needing time to burn, and maintaining a singular point on a target, and not benefiting from near misses, with fragmentation effects. This is possible, but extremely hard to achieve, especially when missiles and drones can carry their own countermeasures, like smoke, which disrupts Directed Energy Weapons (DiMascio, Feickert and Sayler, 2024).</li>
   </p>
 
     
     <h11 id="Refences."><b>References.</b></h11>
 <li><a href="https://www.youtube.com/watch?v=qyjN1rHpLes">Active protection systems: Protecting armour in the drone & missile era.</a> (n.d.). [Video] Directed by Perun. YouTube. Available at:https://www.youtube.com/watch?v=qyjN1rHpLes [Accessed 8 Nov. 2026].<li>
-<li>Wild Hornets (2025). <a href="https://wildhornets.com/en/sting-interceptor">STING – shahed interceptor by Wild Hornets | Ukrainian interceptor drone.</a> [online] Дикі Шершні. Available at: https://wildhornets.com/en/sting-interceptor  [Accessed 19 Nov. 2026].<li>
+
 <li>Bureau of Political-Military Affairs (2026). <a href="https://www.state.gov/releases/bureau-of-political-military-affairs/2026/10/ukraine-patriot-advanced-capability-3-pac-3-missiles">Ukraine – PATRIOT advanced Capability-3 (PAC-3) missiles - United States Department of State.</a> [online] United States Department of State. Available at: https://www.state.gov/releases/bureau-of-political-military-affairs/2026/10/ukraine-patriot-advanced-capability-3-pac-3-missiles [Accessed 8 Nov. 2026].<li> 
+<li><a href="https://www.congress.gov/crs-product/R46925#_Toc171667774">DiMascio, J., Feickert, A. and Sayler, K.M. (2024). Department of Defense Directed Energy Weapons: Background and Issues for Congress.</a> [online] CONGRESS.GOV. Washington DC: Congressional Research Service (CRS). Available at: https://www.congress.gov/crs-product/R46925#_Toc171667774 [Accessed 22 Nov. 2026].</li>
+<li><a href="https://eos-aus.com/defence/high-energy-laser-weapon/apollo/">Electro Optic Systems. (2025). Apollo high energy laser weapon | electro optic systems.</a> [online] Available at: https://eos-aus.com/defence/high-energy-laser-weapon/apollo/ [Accessed 22 Nov. 2026]. </li>
+<li><a href="https://www.gdots.com/armaments/naval-platforms-system/phalanx/">General Dynamics Ordnance and Tactical Systems. (2025). Phalanx close-in weapon system (CIWS) - Navy ship defense.</a> [online] Available at: https://www.gdots.com/armaments/naval-platforms-system/phalanx/ [Accessed 22 Nov. 2026]. </li>
 <li>General Staff of the Armed Forces of Ukraine. (2026).<a href="https://www.facebook.com/GeneralStaff.ua">General Staff of the Armed Forces of Ukraine.</a> Facebook. Available at: https://www.facebook.com/GeneralStaff.ua [Accessed 14 Oct. 2026].<li>
 <li>MiGFlug Team (2015). <a href="https://migflug.com/afterburner/the-v1-flying-bomb/">The V1 flying bomb.</a> [online] Afterburner - MiGFlug’s Magazine. Available at: https://migflug.com/afterburner/the-v1-flying-bomb/  [Accessed 8 Nov. 2026].<li>
+<li>Wild Hornets (2025). <a href="https://wildhornets.com/en/sting-interceptor">STING – shahed interceptor by Wild Hornets | Ukrainian interceptor drone.</a> [online] Дикі Шершні. Available at: https://wildhornets.com/en/sting-interceptor  [Accessed 19 Nov. 2026].<li>
 
 
 
@@ -312,8 +314,11 @@
     const IntroductionCount = displayWordCount("Intro");
     const Main1Count = displayWordCount("Main1");
     const Main2Count = displayWordCount("Main2");
+    const Main3Count = displayWordCount("Main3");
+    const Main4Count = displayWordCount("Main4");
+    const Main5Count = displayWordCount("Main5");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + Main1Count + Main2Count;
+    const totalWordCount = IntroductionCount + Main1Count + Main2Count + Main3Count + Main4Count + Main5Count
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
